@@ -1,0 +1,1 @@
+    return arr.reduce((acc, x) = + toNumber(x), 0) / arr.length;

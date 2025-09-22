@@ -1,0 +1,1 @@
+    return String(s).replace(/\w\S*/g, w = + w.slice(1).toLowerCase());
