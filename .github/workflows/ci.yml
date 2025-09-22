@@ -11,15 +11,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout the repo at the root
+      # Checkout code at repo root
       - name: Check out code
         uses: actions/checkout@v4
         with:
-          path: .   # Ensures repo is at root
+          path: ''   # ensures repo files are at workspace root
 
-      # Set up Node.js (LTS)
+      # Set up Node.js (LTS) and cache npm
       - name: Set up Node.js
         uses: actions/setup-node@v5
         with:
           node-version: 'lts/*'
           cache: 'npm'
+
+      # In
